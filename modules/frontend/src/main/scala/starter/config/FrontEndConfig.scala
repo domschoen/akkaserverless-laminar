@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation.JSImport
 @JsonCodec
 final case class FrontEndConfig(
   useAuthentication: Boolean,
+  websocketPort: Int,
   defaultUser: String,
   msal: MSALConfig,
   akkaserverless: AkkaserverlessConfig

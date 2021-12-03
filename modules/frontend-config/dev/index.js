@@ -1,6 +1,7 @@
 module.exports = {
   config: {
-    useAuthentication: true,
+    useAuthentication: false,
+    websocketPort: 3500,
     defaultUser: "firstname.lastname@example.com",
     msal: {
         authRedirectUrl: "http://localhost:3000/",
@@ -8,7 +9,7 @@ module.exports = {
         clientId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx"
     },
     akkaserverless: {
-      useCloud: true,
+      useCloud: false,
       cloudHostURL: "https://super-star-1234.us-east1.akkaserverless.app",
       localHostURL: "http://localhost:9000"
     }

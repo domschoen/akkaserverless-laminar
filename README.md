@@ -1,6 +1,6 @@
 # akkaserverless-laminar
 
-Small Single Page Application using [Scala.js](http://www.scala-js.org/) and [Laminar](https://laminar.dev/). This client app connect to an [Akka Serverless](https://www.lightbend.com/akka-serverless) backend [application](https://gitlab.hq.k.grp/ist-team/akkaserverless). It manages customers (create new customer, rename customer).
+Small Single Page Application using [Scala.js](http://www.scala-js.org/) and [Laminar](https://laminar.dev/). This client app connect to an [Akka Serverless](https://www.lightbend.com/akka-serverless) backend [application](https://github.com/domschoen/akkaserverless). It manages customers (create new customer, rename customer).
 
 We show here an event driven approach for client application:  Event Sourcing, Event Stream (Laminar), push event through web socket to maintain client  up to date with backend.
 
@@ -128,7 +128,11 @@ sbt> backend/reStart
 
 ## Open 
 
-Open http://localhost:30190/ in the browser.
+Open http://localhost:3000 in the browser.
+
+**Important Note**: If you run akka serverless locally, you to run Chrome by disabling CORS check when working with local URLs
+
+open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security
 
 # Developing
 

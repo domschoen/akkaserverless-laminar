@@ -13,7 +13,7 @@ import starter.data.EventEnvelope
 // https://github.com/kiritsuku/amora/blob/master/web-ui/src/main/scala/amora/frontend/webui/Connection.scala
 
 object WebSocketClient {
-  val url                       = "ws://localhost:8080/ws"
+  val url                       = "ws://localhost:" + config.FrontEndConfig.config.websocketPort + "/ws"
   var socketOpt: Option[Socket] = None
 
   def setSocket() = {

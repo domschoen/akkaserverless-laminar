@@ -12,3 +12,4 @@ target/
 /yarn-error.log
 .DS_Store
 .bsp/sbt.json
+package-lock.json

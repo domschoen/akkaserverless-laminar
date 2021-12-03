@@ -1,6 +1,7 @@
 module.exports = {
   config: {
     useAuthentication: true,
+    websocketPort: 3500,
     defaultUser: "firstname.lastname@example.com",
     msal: {
         authRedirectUrl: "http://localhost:3000/",
