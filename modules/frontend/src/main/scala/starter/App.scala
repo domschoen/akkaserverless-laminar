@@ -66,8 +66,8 @@ object App {
   val useAuthentication = false
 
   def main(args: Array[String]): Unit = {
-    starter.App.myMSALObj.loginRedirect(App.loginRequest).toFuture.foreach(_ => println(""))
     if (config.FrontEndConfig.config.useAuthentication) {
+      starter.App.myMSALObj.loginRedirect(App.loginRequest).toFuture.foreach(_ => println(""))
       val _ = windowEvents.onLoad.foreach(_ => {
         myMSALObj
           .handleRedirectPromise().toFuture
