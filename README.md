@@ -21,7 +21,7 @@ The event stream is supplied with events from 3 possible sources:
 
 As a summary, this below diagram show the event flow of this application :
 
-![Streams](/Users/dschoen/Documents/gitlab/AkkaServerless/akkaserverless-laminar/doc/Streams.png)
+![Streams](./doc/Streams.png)
 
 Once all these streams are connected, everything is updated automatically ! Great !
 
@@ -29,7 +29,7 @@ No cache to manage, it's all done by Laminar. After serverless, welcome to clien
 
 # Keep SPA up to date with changes
 
-![UIAndAkkaServerlessSync](/Users/dschoen/Documents/gitlab/AkkaServerless/akkaserverless-laminar/doc/UIAndAkkaServerlessSync.png)
+![UIAndAkkaServerlessSync](./doc/UIAndAkkaServerlessSync.png)
 
 
 
